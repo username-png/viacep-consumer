@@ -5,10 +5,23 @@
     <Authors>Vicenzo Martinelli</Authors>
     <Company />
     <Description>Cliente REST dotnet core para consulta de CEPs através da api ViaCep.</Description>
+    <Copyright />
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/VicenzoMartinelli/viacep-consumer</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/VicenzoMartinelli/viacep-consumer</RepositoryUrl>
+    <PackageTags>dotnet, dotnet core, cep, rest, json</PackageTags>
+    <PackageReleaseNotes />
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
