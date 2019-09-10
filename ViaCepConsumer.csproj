@@ -11,6 +11,7 @@
     <RepositoryUrl>https://github.com/VicenzoMartinelli/viacep-consumer</RepositoryUrl>
     <PackageTags>dotnet, dotnet core, cep, rest, json</PackageTags>
     <PackageReleaseNotes />
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>

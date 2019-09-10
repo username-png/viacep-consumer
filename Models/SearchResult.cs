@@ -1,7 +1,4 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ViaCepConsumer.Models
 {
@@ -29,9 +26,9 @@ namespace ViaCepConsumer.Models
         public string Unidade { get; set; }
 
         [JsonProperty("ibge")]
-        public int CodigoIbge { get; set; }
+        public int? CodigoIbge { get; set; }
 
         [JsonProperty("gia")]
-        public int Gia { get; set; }
+        public int? Gia { get; set; }
     }
 }
