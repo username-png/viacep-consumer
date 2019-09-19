@@ -10,15 +10,15 @@ using ViaCepConsumer.Models;
 
 namespace ViaCepConsumer
 {
-    public class ViaCepConsumer
+    public class ViaCepClient
     {
         private const string BaseUrl = "https://viacep.com.br";
-        private HttpClientHandler _clientHandler;
+        private readonly HttpClientHandler _clientHandler;
 
-        private HttpClient GetHttpClient() => _clientHandler == null ? GetHttpClient() : new HttpClient(_clientHandler);
+        private HttpClient GetHttpClient() => _clientHandler == null ? new HttpClient() : new HttpClient(_clientHandler);
 
-        public ViaCepConsumer() { }
-        public ViaCepConsumer(string proxyHost, int proxyPort, string proxyUser, string proxyPassword)
+        public ViaCepClient() { }
+        public ViaCepClient(string proxyHost, int proxyPort, string proxyUser, string proxyPassword)
         {
             _clientHandler = new HttpClientHandler
             {
